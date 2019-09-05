@@ -7,5 +7,20 @@ public class Person {
 		this.namn = namn; //hei......
 		
 	}
+
+	public StringBuffer getNamn() {
+		return namn;
+	}
+
+	public void setNamn(StringBuffer namn) {
+		this.namn = namn;
+	}
+
+	@Override
+	public String toString() {
+		return "Person [namn=" + namn + "]";
+	}
+	
+	
 	
 }
