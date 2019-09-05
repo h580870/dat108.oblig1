@@ -4,7 +4,7 @@ public class Person {
 	private StringBuffer namn;
 	
 	public Person(StringBuffer namn) {
-		this.namn = namn;
+		this.namn = namn; //hei
 	}
 	
 }
