@@ -1,6 +1,6 @@
 package no.hvl.dat108;
 
-public class Main {
+public class MainSynkroniseringMedSleep {
 
 	public static void main(String[] args) {
 		
@@ -29,17 +29,29 @@ public class Main {
 		Thread t8 = new Thread(le3);
 		Thread t9 = new Thread(le4);
 		Thread t10 = new Thread(le5);
-		
+		try {
 		t1.start();
+		Thread.sleep(100);
 		t6.start();
+		Thread.sleep(100);
 		t2.start();
+		Thread.sleep(100);
 		t7.start();
+		Thread.sleep(100);
 		t3.start();
+		Thread.sleep(100);
 		t8.start();
+		Thread.sleep(100);
 		t4.start();
+		Thread.sleep(100);
 		t9.start();
+		Thread.sleep(100);
 		t5.start();
+		Thread.sleep(100);
 		t10.start();
+		} catch (Exception e) {
+			
+		}
 		
 	}
 

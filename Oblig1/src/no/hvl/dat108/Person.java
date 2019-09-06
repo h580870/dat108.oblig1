@@ -12,7 +12,7 @@ public class Person {
 		return namn;
 	}
 
-	synchronized public void setNamn(StringBuffer namn) {
+	public void setNamn(StringBuffer namn) {
 		this.namn.delete(0,this.namn.length());
 		this.namn.append(namn);
 	}
