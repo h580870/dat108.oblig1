@@ -3,12 +3,44 @@ package no.hvl.dat108;
 public class Main {
 
 	public static void main(String[] args) {
-		//Create new Person objekt.
-		//Lag 10 tråda, 5 skrivera og 5 lesera...
-		//So ska ej starte disse 10 trådane
 		
-		//So ska 5 av trådane gi verdia til det EINE person objektet,
-		//So ska 5 av trådane lese verdiane til det EINE person objektet.
+		//Her laga ej ETT person objekt.. og dinna!! den skal vi endre på fem gonga.
+		Person p = new Person(new StringBuffer("Kaarejon"));
+		
+		//So begynne man å endre på den.
+		Skriver sk1 = new Skriver(p, new StringBuffer("Potulusu"));
+		Skriver sk2 = new Skriver(p, new StringBuffer("Bamename"));
+		Skriver sk3 = new Skriver(p, new StringBuffer("Kalijulu"));
+		Skriver sk4 = new Skriver(p, new StringBuffer("Opandait"));
+		Skriver sk5 = new Skriver(p, new StringBuffer("Preventu"));
+		Leser le1 = new Leser(p);
+		Leser le2 = new Leser(p);
+		Leser le3 = new Leser(p);
+		Leser le4 = new Leser(p);
+		Leser le5 = new Leser(p);
+		
+		Thread t1 = new Thread(sk1);
+		Thread t2 = new Thread(sk2);
+		Thread t3 = new Thread(sk3);
+		Thread t4 = new Thread(sk4);
+		Thread t5 = new Thread(sk5);
+		Thread t6 = new Thread(le1);
+		Thread t7 = new Thread(le2);
+		Thread t8 = new Thread(le3);
+		Thread t9 = new Thread(le4);
+		Thread t10 = new Thread(le5);
+		
+		t1.start();
+		t6.start();
+		t2.start();
+		t7.start();
+		t3.start();
+		t8.start();
+		t4.start();
+		t9.start();
+		t5.start();
+		t10.start();
+		
 	}
 
 }

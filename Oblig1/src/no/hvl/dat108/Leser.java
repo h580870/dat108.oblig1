@@ -2,8 +2,14 @@ package no.hvl.dat108;
 
 public class Leser implements Runnable {
 	
+	private Person p;
+	
+	public Leser(Person p) {
+		this.p = p;
+	}
+	
 	public void run () {
-		//Lese det bestemte Person objektet....
+		System.out.println(p.getNamn());
 	}
 	
 }

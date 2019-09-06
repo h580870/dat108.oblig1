@@ -4,7 +4,7 @@ public class Person {
 	private StringBuffer namn;
 	
 	public Person(StringBuffer namn) {
-		this.namn = namn; //hei......
+		this.namn = namn;
 		
 	}
 
@@ -12,8 +12,9 @@ public class Person {
 		return namn;
 	}
 
-	public void setNamn(StringBuffer namn) {
-		this.namn = namn;
+	synchronized public void setNamn(StringBuffer namn) {
+		this.namn.delete(0,this.namn.length());
+		this.namn.append(namn);
 	}
 
 	@Override
