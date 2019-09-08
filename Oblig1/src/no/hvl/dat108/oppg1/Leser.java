@@ -10,6 +10,8 @@ public class Leser implements Runnable {
 	
 	public void run () {
 		System.out.println(p.getNamn());
+		
+		
 	}
 	
 }
