@@ -1,10 +1,10 @@
 package Hassan;
 
-<<<<<<< HEAD
+
 public class Ansatt { 	//Darren var her
-=======
-public class Ansatt {
->>>>>>> branch 'master' of https://github.com/h580870/dat108.oblig1.git
+
+
+
 	
 	private String fornavn;
 	private String etternavn;
