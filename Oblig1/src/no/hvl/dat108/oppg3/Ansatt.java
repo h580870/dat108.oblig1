@@ -55,4 +55,11 @@ public class Ansatt {
 	public void setAarslonn(int aarslonn) {
 		this.aarslonn = aarslonn;
 	}
+
+	@Override
+	public String toString() {
+		return "Ansatt [fornavn=" + fornavn + ", etternavn=" + etternavn + ", kjonn=" + kjonn + ", stilling=" + stilling
+				+ ", aarslonn=" + aarslonn + "]";
+	}
+	
 }
