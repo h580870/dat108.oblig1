@@ -17,10 +17,10 @@ public class Oppgave2 {
 		
 		// b
 		
-		Beregn beregn = new Beregn();
-		String res1 = Beregn.kal((a,b) -> "" +(a+b),12, 13);
-		String res2 = Beregn.kal((a,b) -> "" +Math.max(a, b),-5, 3);
-		String res3 = Beregn.kal((a,b) -> "" +Math.abs(a-b), 54, 45);
+		
+		String res1 = beregn((a,b) -> "" +(a+b),12, 13);
+		String res2 = beregn((a,b) -> "" +Math.max(a, b),-5, 3);
+		String res3 =beregn((a,b) -> "" +Math.abs(a-b), 54, 45);
 		
         System.out.println(res1);
         System.out.println(res2);
@@ -35,10 +35,8 @@ public class Oppgave2 {
 
 	}
 	
-}
-	
-	class Beregn{
-		public static  String kal(BiFunction <Integer, Integer, String> bi, Integer i1, Integer i2) {
+
+		public static String beregn(BiFunction <Integer, Integer, String> bi, Integer i1, Integer i2) {
 			
 			return bi.apply(i1, i2);
 			
