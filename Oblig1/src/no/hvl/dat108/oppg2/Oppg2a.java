@@ -12,6 +12,8 @@ public class Oppg2a {
 		Collections.sort(listen,(g1, g2) -> Integer.valueOf(g1)-Integer.valueOf(g2));
 		
 		System.out.println(listen);
+		
+		System.out.println(2+2);
 	}
 
 }
