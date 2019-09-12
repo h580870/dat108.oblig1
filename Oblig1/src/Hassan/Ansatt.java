@@ -1,6 +1,6 @@
 package Hassan;
 
-public class Ansatt {
+public class Ansatt { 	//Darren var her
 	
 	private String fornavn;
 	private String etternavn;
