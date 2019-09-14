@@ -49,7 +49,7 @@ public class Oppg4 {
 			System.out.println(antallK);
 			
 			System.out.println();
-			
+			//Oppgave c)
 			double snitt = ansatte.stream()
 					.filter(a -> a.getKjonn() == Kjonn.Kvinne)
 					.collect(Collectors.averagingInt(a -> a.getAarslonn()));
