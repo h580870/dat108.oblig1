@@ -102,7 +102,9 @@ public class Oppg4 {
 					.mapToInt(p -> p.getAarslonn()) //Gjør om til int slik at vi kan bruke sum() som summerer årslønn.
 					.sum();
 						
+			
 				System.out.print(heltall);
+				
 			
 			
 			
