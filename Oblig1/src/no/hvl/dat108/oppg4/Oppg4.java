@@ -64,7 +64,7 @@ public class Oppg4 {
 					
 			ansatte.stream()
 			.filter(p -> p.getStilling().toUpperCase().contains("SJEF"))
-			.forEach(p -> p.setAarslonn(p.getAarslonn()/100*105) );
+			.forEach(p -> p.setAarslonn(p.getAarslonn()/100*107) );
 			
 			skrivUtAlle(ansatte);
 			
